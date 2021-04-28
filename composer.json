@@ -1,0 +1,11 @@
+{
+    "name": "user/music-club-interface",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "Arman",
+            "email": "arman.habul@stu.ibu.edu.ba"
+        }
+    ],
+    "require": {}
+}
