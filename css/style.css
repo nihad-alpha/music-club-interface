@@ -1,5 +1,7 @@
 body {
   margin-top: 50px;
+  background-image: url(../images/bg.png);
+  color:#fff;
 }
 
 #wrapper {
@@ -13,27 +15,27 @@ body {
 
 /* Nav Messages */
 
-.messages-dropdown .dropdown-menu .message-preview .avatar,
-.messages-dropdown .dropdown-menu .message-preview .name,
-.messages-dropdown .dropdown-menu .message-preview .message,
-.messages-dropdown .dropdown-menu .message-preview .time {
+.external-links .dropdown-menu .message-preview .avatar,
+.external-links .dropdown-menu .message-preview .name,
+.external-links .dropdown-menu .message-preview .message,
+.external-links .dropdown-menu .message-preview .time {
   display: block;
 }
 
-.messages-dropdown .dropdown-menu .message-preview .avatar {
+.external-links .dropdown-menu .message-preview .avatar {
   float: left;
   margin-right: 15px;
 }
 
-.messages-dropdown .dropdown-menu .message-preview .name {
+.external-links .dropdown-menu .message-preview .name {
   font-weight: bold;
 }
 
-.messages-dropdown .dropdown-menu .message-preview .message {
+.external-links .dropdown-menu .message-preview .message {
   font-size: 12px;
 }
 
-.messages-dropdown .dropdown-menu .message-preview .time {
+.external-links .dropdown-menu .message-preview .time {
   font-size: 12px;
 }
 
@@ -65,25 +67,6 @@ body {
 	overflow-y: auto;
   }
 
-  /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
-
-  .side-nav>li.dropdown>ul.dropdown-menu {
-	position: relative;
-	min-width: 225px;
-	margin: 0;
-	padding: 0;
-	border: none;
-	border-radius: 0;
-	background-color: transparent;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-  }
-
-  .side-nav>li.dropdown>ul.dropdown-menu>li>a {
-	color: #999999;
-	padding: 15px 15px 15px 25px;
-  }
-
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
@@ -102,17 +85,14 @@ body {
 
   /* Nav Messages */
 
-  .messages-dropdown .dropdown-menu {
-	min-width: 300px;
+  .external{
+    position: relative;
   }
 
-  .messages-dropdown .dropdown-menu li a {
-	white-space: normal;
+  .external-links {
+	  min-width: 120px;
+    position: absolute;
+    text-align: center;
+    margin-right: 10px;
   }
-
-  .navbar-collapse {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
 }
