@@ -58,7 +58,7 @@
     var email = $("#email").val();
     if(!email.includes("@")) {
         document.getElementById('email').style.borderColor = "red";
-        document.getElementById('greska1').innerHTML = "Input format of email is incorrect!";
+        document.getElementById('greska1').innerHTML = "Input format of email is incorrect or email is missing!";
         document.getElementById('greska1').style.visibility = "visible";
         document.getElementById('email').placeholder = "";
     }
