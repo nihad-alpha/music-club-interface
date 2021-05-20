@@ -123,7 +123,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
 }
 
 input[type=text] {
-  background-color: #d91a7d;
+  background-color: #222222;
   border: none;
   color: #fff;
   padding: 15px 32px;
