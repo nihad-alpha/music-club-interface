@@ -51,7 +51,7 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #222222;
+  background: #111111;
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -63,7 +63,7 @@ h2 {
 }
 
 #formFooter {
-  background-color: #f6f6f6;
+  background-color: #222222;
   border-top: 1px solid #dce8f1;
   padding: 25px;
   text-align: center;
@@ -237,6 +237,9 @@ input[type=text]:focus {
 }
 
 /* Simple CSS3 Fade-in Animation */
+.underlineHover{
+  color: #fff;
+}
 .underlineHover:after {
   display: block;
   left: 0;
