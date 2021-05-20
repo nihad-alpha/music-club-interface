@@ -80,8 +80,8 @@ h2.inactive {
 }
 
 h2.active {
-  color: #56baed;
-  border-bottom: 2px solid #5fbae9;
+  color: #e5396b;
+  border-bottom: 2px solid #e5396b;
 }
 
 
@@ -89,7 +89,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
+  background-color: #e5396b;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -145,7 +145,7 @@ input[type=text] {
 
 input[type=text]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #e5396b;
 }
 
 input[type=text]:placeholder {
@@ -243,13 +243,13 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #e5396b;
   content: "";
   transition: width 0.2s;
 }
 
 .underlineHover:hover {
-  color: #56baed;
+  color: #e5396b;
 }
 
 .underlineHover:hover:after{
