@@ -71,7 +71,7 @@ li{
 	overflow-y: auto;
   color: #fff;
   }
-
+  
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
