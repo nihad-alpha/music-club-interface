@@ -1,6 +1,7 @@
 body {
   margin-top: 50px;
   background-image: url(../images/bg.png);
+  background-size: cover;
   color:#fff;
 }
 
@@ -66,8 +67,11 @@ li{
 	top: 50px;
 	height: 100%;
 	border-radius: 0;
-	border: none;
+	border-right: solid;
+  border-width:5px;
+  border-color:white;
 	background-image:url("../images/sidebar.png");
+  background-size: cover;
 	overflow-y: auto;
   color: #fff;
   }
@@ -101,5 +105,15 @@ li{
     position: absolute;
     text-align: center;
     margin-right: 10px;
+  }
+
+
+  /* CSS FOR VIDEOS */
+
+  iframe {
+    border:solid   ;
+    border-width:5px;
+    border-color:#bb3198;
+    background-color: black;
   }
 }
