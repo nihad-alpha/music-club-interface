@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/login-form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Sign In </h2>
+          <a href="register.html"><h2 class="inactive underlineHover"> Sign Up </h2></a>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="images/dummy-icon.png" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <div><input type="text" id="username" class="fadeIn second" name="login" placeholder="username"></div>
+            <div><label id ="greska1" style="visibility: hidden">Username is missing</label></div>
+            <div><input type="text" id="password" class="fadeIn third" name="login" placeholder="password"></div>
+            <div><label id ="greska2" style="visibility: hidden">Password is missing</label></div>
+            <div><input type="button" onclick="onClick()" value="Log In"></div>
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="forgot.html">Forgot Password?</a>
+          </div>
+      
+        </div>
+      </div>
+</body>
+
+
+  
+
+<script>
+    function onClick(){
+    if(document.getElementById("username").value.length ==0)
+    {
+        document.getElementById('username').style.borderColor = "red";
+        document.getElementById('greska1').style.visibility = "visible";
+        document.getElementById('username').placeholder = "";
+    }
+
+    if(document.getElementById("password").value.length ==0)
+    {
+        document.getElementById('password').style.borderColor = "red";
+        document.getElementById('greska2').style.visibility = "visible";
+        document.getElementById('password').placeholder = "";
+    }
+
+    if(document.getElementById("password").value.length != 0 && document. getElementById("username").value.length != 0)
+    {
+        location.href = "index.html";
+    }
+  }
+</script>
+</html>
+
+
+
+
+
+
+
+    
+
+
+
