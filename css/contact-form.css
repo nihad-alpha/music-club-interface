@@ -156,12 +156,11 @@ input[id="message"] {
   background-color: #222222;
   border: none;
   color: #fff;
-  padding: 15px 32px;
-  text-align: center;
+  text-align:start;
+  line-break: auto;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 5px;
   width: 85%;
   height: 200px;
   border: 2px solid #f6f6f6;
@@ -178,6 +177,11 @@ input[id="message"]:focus {
   background-color: #bb3198;
   border-bottom: 2px solid #e5396b;
 }
+
+input[id="message"]::placeholder{
+    color: #fff;
+    text-align: center;
+  }
 
 
 /* ANIMATIONS */
