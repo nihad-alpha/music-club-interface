@@ -49,3 +49,33 @@
         </div>
     </div>
 </div>
+
+<script>
+    function onClick() {
+        if (document.getElementById("fname").value.length == 0) {
+            document.getElementById('fname').style.borderColor = "red";
+            document.getElementById('greska1').style.visibility = "visible";
+            document.getElementById('fname').placeholder = "";
+        }//Fix when it is populated
+
+        if (document.getElementById("lname").value.length == 0) {
+            document.getElementById('lname').style.borderColor = "red";
+            document.getElementById('greska2').style.visibility = "visible";
+            document.getElementById('lname').placeholder = "";
+        }//Fix when it is populated
+
+        if (document.getElementById("message").value.length == 0) {
+            document.getElementById('message').style.borderColor = "red";
+            document.getElementById('greska3').style.visibility = "visible";
+            document.getElementById('message').placeholder = "";
+        }//Fix when it is populated
+
+        if(document.getElementById("fname").value.length != 0 && document. getElementById("lname").value.length != 0 && document. getElementById("message").value.length != 0)
+    {
+        alert("Message sent!");
+    }
+        
+    }
+</script>
+
+</html>
