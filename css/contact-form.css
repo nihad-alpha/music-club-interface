@@ -41,15 +41,17 @@ h2 {
   align-items: center;
   flex-direction: column; 
   justify-content: center;
-  width: 100%;
+  width: 30%;
   min-height: 100%;
   padding: 20px;
+  float: right;
 }
 
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #111111;
+  background-image:url('../images/video-bg.png');
+  background-size: cover;
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -58,8 +60,6 @@ h2 {
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
-  left: 30%;
-  margin-top: 5%;
 }
 
 #formFooter {
