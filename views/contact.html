@@ -1,27 +1,92 @@
-<link rel="stylesheet" href="css/contact-form.css">
+<html lang="en">
 
-<div class="wrapper">
-    <div id="formContent">
-        <!-- Tabs Titles -->
-        <h2 class="active"> Sign In </h2>
-        <a href="register.html">
-            <h2 class="inactive underlineHover"> Sign Up </h2>
-        </a>
+<head>
+    <title>Media</title>
 
-        <!-- Icon -->
-        <div class="fadeIn first">
-            <img src="images/dummy-icon.png" id="icon" alt="User Icon" />
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-form.css">
+</head>
+
+<div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Contact <small>Music Club Portal</small></h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active"><i class="fa fa-desktop"></i> Contact</li>
+            </ol>
         </div>
+    </div>
 
-        <!-- Contact Form -->
-        <form>
-            <div><input type="text" id="fname" class="fadeIn second" name="login" placeholder="First Name"></div>
-            <div><label id="greska1" style="visibility: hidden">Required field!</label></div>
-            <div><input type="text" id="lname" class="fadeIn third" name="login" placeholder="Last Name"></div>
-            <div><label id="greska2" style="visibility: hidden">Required field!</label></div>
-            <div><input type="text" id="message" class="fadeIn third" name="login" placeholder="Message"></div>
-            <div><label id="greska3" style="visibility: hidden">Required field!</label></div>
-            <div><input type="button" onclick="onClick()" value="Submit"></div>
-        </form>
+    <div class="wrapper">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Sign In </h2>
+            <a href="register.html">
+                <h2 class="inactive underlineHover"> Sign Up </h2>
+            </a>
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="images/dummy-icon.png" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Contact Form -->
+            <form>
+                <div><input type="text" id="fname" class="fadeIn second" name="login" placeholder="First Name"></div>
+                <div><label id="greska1" style="visibility: hidden">Required field!</label></div>
+                <div><input type="text" id="lname" class="fadeIn third" name="login" placeholder="Last Name"></div>
+                <div><label id="greska2" style="visibility: hidden">Required field!</label></div>
+                <div><input type="text" id="message" class="fadeIn third" name="login" placeholder="Message"></div>
+                <div><label id="greska3" style="visibility: hidden">Required field!</label></div>
+                <div><input type="button" onclick="onClick()" value="Submit"></div>
+            </form>
+        </div>
     </div>
 </div>
+
+<div style = "float: left; width: 60%; height: 600px; margin-left: 5%; padding:30px; border-radius: 25px; background-image:url('./images/video-bg.png'); background-size: cover; -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);">
+    <h1><u>Contact us using email</u></h1>
+    <h2>Asim Numic - President</h2>
+    <h3>asim.numic@stu.ibu.edu.ba</h3>
+    <h2>Ajla Silajdzija - VP</h2>
+    <h3>ajla.silajdzija@stu.ibu.edu.ba</h3>
+    <h2>Dzeneta Durakovic - PR></h2>
+    <h3>dzeneta.durakovic@stu.ibu.edu.ba</h3>
+</div>
+
+<script>
+    function onClick() {
+        if (document.getElementById("fname").value.length == 0) {
+            document.getElementById('fname').style.borderColor = "red";
+            document.getElementById('greska1').style.visibility = "visible";
+            document.getElementById('fname').placeholder = "";
+        }//Fix when it is populated
+
+        if (document.getElementById("lname").value.length == 0) {
+            document.getElementById('lname').style.borderColor = "red";
+            document.getElementById('greska2').style.visibility = "visible";
+            document.getElementById('lname').placeholder = "";
+        }//Fix when it is populated
+
+        if (document.getElementById("message").value.length == 0) {
+            document.getElementById('message').style.borderColor = "red";
+            document.getElementById('greska3').style.visibility = "visible";
+            document.getElementById('message').placeholder = "";
+        }//Fix when it is populated
+
+        if(document.getElementById("fname").value.length != 0 && document. getElementById("lname").value.length != 0 && document. getElementById("message").value.length != 0)
+    {
+        alert("Message sent!");
+    }
+        
+    }
+</script>
+
+</html>
