@@ -159,7 +159,6 @@ input[id="message"] {
   text-align:start;
   line-break: auto;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   width: 85%;
   height: 200px;
