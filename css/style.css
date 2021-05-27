@@ -133,7 +133,8 @@ li{
   
   /* Add some padding inside the card container */
   .container {
-    padding: 2px 16px;
-    text-align: center;
+    margin-left: 4%;
+    margin-bottom: 1%;
+    margin-top: 1%;
   }
 }
