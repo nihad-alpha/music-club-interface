@@ -33,11 +33,11 @@
 
             <!-- Contact Form -->
             <form>
-                <div><input type="text" id="fname" class="fadeIn second" name="login" placeholder="First Name"></div>
+                <div><input type="text" id="fname" class="fadeIn second" name="fname" placeholder="First Name"></div>
                 <div><label id="greska1" style="visibility: hidden">Required field!</label></div>
-                <div><input type="text" id="lname" class="fadeIn third" name="login" placeholder="Last Name"></div>
+                <div><input type="text" id="lname" class="fadeIn third" name="lname" placeholder="Last Name"></div>
                 <div><label id="greska2" style="visibility: hidden">Required field!</label></div>
-                <div><input type="text" id="message" class="fadeIn third" name="login" placeholder="Message"></div>
+                <div><input type="text" id="message" class="fadeIn third" name="message" placeholder="Message"></div>
                 <div><label id="greska3" style="visibility: hidden">Required field!</label></div>
                 <div><input type="button" onclick="onClick()" value="Submit"></div>
             </form>
@@ -56,7 +56,7 @@ box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);">
     <h4><img src="./images/icon-email.png"/> dzeneta.durakovic@stu.ibu.edu.ba</h4>
 
     <br>
-    <h1>Address</h1>
+    <h1><u>Address</u></h1>
     <address>
       <h3>International Burch University</h3>
       <h4>Francuske Revolucije bb</h4>
@@ -68,29 +68,41 @@ box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);">
 
 <script>
     function onClick() {
+
+        if(document.getElementById("fname").value.length != 0 
+        && document. getElementById("lname").value.length != 0 
+        && document. getElementById("message").value.length != 0)
+        {
+            alert("Message sent!");
+        }
+
         if (document.getElementById("fname").value.length == 0) {
             document.getElementById('fname').style.borderColor = "red";
             document.getElementById('greska1').style.visibility = "visible";
             document.getElementById('fname').placeholder = "";
-        }//Fix when it is populated
+        } else {
+            document.getElementById('fname').style.borderColor = "white";
+            document.getElementById('greska1').style.visibility = "hidden";
+        }
 
         if (document.getElementById("lname").value.length == 0) {
             document.getElementById('lname').style.borderColor = "red";
             document.getElementById('greska2').style.visibility = "visible";
             document.getElementById('lname').placeholder = "";
-        }//Fix when it is populated
+        } else {
+            document.getElementById('lname').style.borderColor = "white";
+            document.getElementById('greska2').style.visibility = "hidden";
+        }
 
         if (document.getElementById("message").value.length == 0) {
             document.getElementById('message').style.borderColor = "red";
             document.getElementById('greska3').style.visibility = "visible";
             document.getElementById('message').placeholder = "";
-        }//Fix when it is populated
-
-        if(document.getElementById("fname").value.length != 0 && document. getElementById("lname").value.length != 0 && document. getElementById("message").value.length != 0)
-    {
-        alert("Message sent!");
-    }
-        
+        } else {
+            document.getElementById('message').style.borderColor = "white";
+            document.getElementById('greska3').style.visibility = "hidden";
+        }
+               
     }
 </script>
 

@@ -1,6 +1,7 @@
 <head>
 <link rel="stylesheet" href="./css/login-form.css">
 <link rel="stylesheet" href="./css/contact-form.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <div id="page-wrapper">
@@ -21,24 +22,21 @@
         <div style = "padding:40px; border-radius: 15px; background-image:url('./images/video-bg.png'); background-size: cover; filter: drop-shadow(10px 10px 4px #000000)">
             <center><h2 style="border-bottom:solid;">Charlie Puth - Attention (Cover)</h2></center>
         </br>
-            <center><iframe src="https://www.youtube.com/embed/6notA_kTnho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <center><iframe style = "width:60%;" src="https://www.youtube.com/embed/6notA_kTnho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
             </br>
             <h3>Description</h3>
             <p style="font-size:20px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             
             </br>
             
-            <h3>Comments</h3>
-            <div style = "border-left:solid; border-right:solid; background-color: rgb(41, 41, 42);filter: drop-shadow(10px 10px 4px #000000)">
-              <div style = " border-bottom:solid; overflow:auto;">
-                <div style = "padding: 20px; width:20%; float:left;border-right:solid;">@arman</div>
-                <div style = "padding: 20px; width:80%; float:right;">This song is beautiful! Can't wait to hear more!</div>
-              </div>
-              <div style = "border-bottom:solid; overflow:auto;">
-                <div style = "padding: 20px; width:20%; float:left; border-right:solid;">@nihad</div>
-                <div style = "padding: 20px; width:80%; float:right;">Such a delightful cover of Attention. Incredible!</div>
-              </div>
+            <h3><u>Comments</u></h3>
+            <div style = "display:grid; grid-template-columns: 20% auto; padding: 10px;">
+              <div style = "padding: 10px; border-bottom:solid;">@arman</div>
+              <div style = "padding: 10px; border-bottom:solid;">This is a comment made by @arman</div>
+              <div style = "padding: 10px; border-bottom:solid;">@nihad</div>
+              <div style = "padding: 10px; border-bottom:solid;">This is a comment made by @nihad</div>
             </div>
+          
           </br>
 
           <div style="float:right;">
@@ -62,8 +60,11 @@
         </br>
       
             <div style = "overflow:auto; background-color:transparent;">
-              <div style = "padding:20px;"><input type="text" class="fadeIn second" name="login" placeholder="Comment" id = "message"></div>
-              <div><input id ="commentButton" type="button" value="Add a comment"></div>
+              <div><input type="text" class="fadeIn second" name="comment" placeholder="Comment" id = "message"></div>
+            </br>
+              <button class="w3-button w3-purple" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Add a comment
+              </button>
             </div>
 
         </div>
@@ -73,22 +74,18 @@
         <div style = "padding:30px; border-radius: 25px; background-image:url('./images/video-bg.png'); background-size: cover; filter: drop-shadow(10px 10px 4px #000000)">
             <center><h2 style = "border-bottom:solid;">Nyca - Borba</h2></center>
           </br>
-            <center><iframe src="https://www.youtube.com/embed/bgjgmexpuuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <center><iframe style = "width:60%;" src="https://www.youtube.com/embed/bgjgmexpuuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
             </br>
             <h3>Description</h3>
             <p style="font-size:20px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 
-            <h3>Comments</h3>
-            <div style = "border-left:solid; border-right:solid; background-color: rgb(41, 41, 42);filter: drop-shadow(10px 10px 4px #000000)">
-              <div style = "border-bottom:solid; overflow:auto;">
-                <div style = "padding: 20px; width:20%; float:left;border-right:solid;">@arman</div>
-                <div style = "padding: 20px; width:80%; float:right;">This song is beautiful! Can't wait to hear more!</div>
-              </div>
-              <div style = "border-bottom:solid; overflow:auto;">
-                <div style = "padding: 20px; width:20%; float:left; border-right:solid;">@nihad</div>
-                <div style = "padding: 20px; width:80%; float:right;">Nyca killed this one!</div>
-              </div>
+            <h3><u>Comments</u></h3>
+            <div style = "display:grid; grid-template-columns: 20% auto; padding: 10px;">
+              <div style = "padding: 10px; border-bottom:solid;">@arman</div>
+              <div style = "padding: 10px; border-bottom:solid;">This is a comment made by @arman</div>
+              <div style = "padding: 10px; border-bottom:solid;">@nihad</div>
+              <div style = "padding: 10px; border-bottom:solid;">This is a comment made by @nihad</div>
             </div>
           </br>
 
@@ -113,10 +110,13 @@
         </br>
 
 
-          <div style = "overflow:auto; background-color:transparent;">
-              <div style = "padding:20px;"><input type="text" class="fadeIn second" name="login" placeholder="Comment" id = "message"></div>
-              <div><input id ="commentButton" type="button" value="Add a comment"></div>
-            </div>
+        <div style = "overflow:auto; background-color:transparent;">
+          <div><input type="text" class="fadeIn second" name="comment" placeholder="Comment" id = "message"></div>
+        </br>
+          <button class="w3-button w3-purple" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Add a comment
+          </button>
+        </div>
           
         </div>
         </div>

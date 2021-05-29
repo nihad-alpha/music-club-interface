@@ -18,11 +18,11 @@
       
           <!-- Login Form -->
           <form>
-            <div><input type="text" id="email" class="fadeIn second" name="login" placeholder="email"></div>
+            <div><input type="text" id="email" class="fadeIn second" name="email" placeholder="email"></div>
             <div><label id ="greska1" style="visibility: hidden">Email is missing</label></div>
-            <div><input type="text" id="username" class="fadeIn third" name="login" placeholder="username"></div>
+            <div><input type="text" id="username" class="fadeIn third" name="username" placeholder="username"></div>
             <div><label id ="greska2" style="visibility: hidden">Username is missing</label></div>
-            <div><input type="text" id="password" class="fadeIn third" name="login" placeholder="password"></div>
+            <div><input type="text" id="password" class="fadeIn third" name="password" placeholder="password"></div>
             <div><label id ="greska3" style="visibility: hidden">Password is missing</label></div>
             <div><input type="button" onclick="onClick()" value="Sign Up"></div>
           </form>
@@ -35,18 +35,24 @@
 
 <script>
     function onClick(){
-    if(document.getElementById("username").value.length ==0)
-    {
-        document.getElementById('username').style.borderColor = "red";
-        document.getElementById('greska2').style.visibility = "visible";
-        document.getElementById('username').placeholder = "";
-    }
-
     if(document.getElementById("email").value.length ==0)
     {
         document.getElementById('email').style.borderColor = "red";
         document.getElementById('greska1').style.visibility = "visible";
         document.getElementById('email').placeholder = "";
+    } else {
+        document.getElementById('email').style.borderColor = "white";
+        document.getElementById('greska1').style.visibility = "hidden";
+    }
+
+    if(document.getElementById("username").value.length ==0)
+    {
+        document.getElementById('username').style.borderColor = "red";
+        document.getElementById('greska2').style.visibility = "visible";
+        document.getElementById('username').placeholder = "";
+    } else {
+        document.getElementById('username').style.borderColor = "white";
+        document.getElementById('greska2').style.visibility = "hidden";
     }
 
     if(document.getElementById("password").value.length ==0)
@@ -54,6 +60,9 @@
         document.getElementById('password').style.borderColor = "red";
         document.getElementById('greska3').style.visibility = "visible";
         document.getElementById('password').placeholder = "";
+    } else {
+        document.getElementById('password').style.borderColor = "white";
+        document.getElementById('greska3').style.visibility = "hidden";
     }
 
     var email = $("#email").val();
@@ -64,7 +73,10 @@
         document.getElementById('email').placeholder = "";
     }
 
-    if(document.getElementById("password").value.length != 0 && document. getElementById("username").value.length != 0 && document. getElementById("email").value.length != 0)
+    if(document.getElementById("password").value.length != 0 
+    && document. getElementById("username").value.length != 0 
+    && document. getElementById("email").value.length != 0 
+    && email.includes("@"))
     {
         location.href = "login.html";
     }

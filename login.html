@@ -18,9 +18,9 @@
       
           <!-- Login Form -->
           <form>
-            <div><input type="text" id="username" class="fadeIn second" name="login" placeholder="username"></div>
+            <div><input type="text" id="username" class="fadeIn second" name="username" placeholder="username"></div>
             <div><label id ="greska1" style="visibility: hidden">Username is missing</label></div>
-            <div><input type="text" id="password" class="fadeIn third" name="login" placeholder="password"></div>
+            <div><input type="text" id="password" class="fadeIn third" name="password" placeholder="password"></div>
             <div><label id ="greska2" style="visibility: hidden">Password is missing</label></div>
             <div><input type="button" onclick="onClick()" value="Log In"></div>
           </form>
@@ -41,6 +41,9 @@
         document.getElementById('username').style.borderColor = "red";
         document.getElementById('greska1').style.visibility = "visible";
         document.getElementById('username').placeholder = "";
+    } else {
+        document.getElementById('username').style.borderColor = "white";
+        document.getElementById('greska1').style.visibility = "hidden";
     }
 
     if(document.getElementById("password").value.length ==0)
@@ -48,9 +51,13 @@
         document.getElementById('password').style.borderColor = "red";
         document.getElementById('greska2').style.visibility = "visible";
         document.getElementById('password').placeholder = "";
+    } else {
+        document.getElementById('password').style.borderColor = "white";
+        document.getElementById('greska2').style.visibility = "hidden";
     }
 
-    if(document.getElementById("password").value.length != 0 && document. getElementById("username").value.length != 0)
+    if(document.getElementById("password").value.length != 0 
+    && document. getElementById("username").value.length != 0)
     {
         location.href = "index.html";
     }
