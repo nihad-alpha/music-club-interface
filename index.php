@@ -25,7 +25,7 @@
     <br>
     <center><h1>Welcome to the Club!</h1>
     <p>We hope to keep you :)</p>
-    <p>Sit back and vibe pls!</p></center>
+    <p>Sit back and vibe pls! Now I need to test my Linux machine.</p></center>
 
 </div>
 
